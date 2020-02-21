@@ -1,5 +1,5 @@
 import { reducer } from './reducer';
-import drinkCoffee from '../actions/actions.js';
+import { drinkCoffee } from '../actions/actions.js';
 
 describe('REDUCER TEST', () => {
   it('Handle coffee case', () => {
