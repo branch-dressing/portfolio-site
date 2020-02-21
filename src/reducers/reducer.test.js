@@ -1,5 +1,5 @@
 import { reducer } from './reducer';
-import { drinkCoffee } from '../actions/actions.js';
+import { drinkCoffee, eatPizza } from '../actions/actions.js';
 
 describe('REDUCER TEST', () => {
   it('Can handle unrecognized action', () => {
@@ -14,4 +14,11 @@ describe('REDUCER TEST', () => {
     const newState = reducer(initialState, action);
     expect(newState).toEqual({ coffees: 1 });
   });
+
+  it('Handles eat pizza case', () => {
+    const action = eatPizza();
+    const initialState = { slices: 0 };
+    const newState = reducer(initialState, action);
+    expect(newState).toEqual({ slices: 1 });
+  })
 });
