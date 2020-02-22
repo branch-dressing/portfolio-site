@@ -19,5 +19,5 @@ describe('JoelGame component', () => {
         <button>High Five</button>
       </section>
     ));
-  })
+  });
 });

@@ -12,16 +12,17 @@ describe('SELECTORS TEST', () => {
 
   it('can get stats from state', () => {
     const state = {
-      reducer: {
+      statsReducer: {
         coffees: 0,
         slices: 0,
         books: 0,
         fives: 0
       }
     };
-    expect(toGetStats(state)).toEqual({coffees: 0,
+    expect(toGetStats(state)).toEqual({
+      coffees: 0,
       slices: 0,
       books: 0,
-      fives: 0})
-  })
+      fives: 0 });
+  });
 });
