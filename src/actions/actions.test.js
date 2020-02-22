@@ -1,4 +1,4 @@
-import { drinkCoffee, eatPizza, readBook, highFive } from './actions';
+import { drinkCoffee, eatPizza, readBook, highFive, disableControls } from './actions';
 
 describe('ACTIONS TEST', () => {
   it('creates a drink coffee action', () => {

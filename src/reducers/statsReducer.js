@@ -7,7 +7,7 @@ const initialState = {
   fives: 0
 };
 
-export const reducer = (state = initialState, action) => {
+export const statsReducer = (state = initialState, action) => {
   switch(action.type) {
     case DRINK_COFFEE:
       return { ...state, coffees: state.coffees + 1 };

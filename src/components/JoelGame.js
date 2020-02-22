@@ -1,6 +1,6 @@
 import React from 'react';
 
-const JoelGame = () => {
+export const JoelGame = () => {
 
   return (
     <section>
