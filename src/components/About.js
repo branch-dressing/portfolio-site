@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './About.css';
 
 export const About = () => (
-  <section>
-    <h3>About</h3>
+  <section className={styles.about}>
+    <h2>About</h2>
     <p>Hello, and thanks for reading!
       <br/>
     I am a full stack developer who loves seeing projects from inception to completion. My background in professional theatre has prepared me for team collaboration and creative problem solving. I am passionate about reading, love discussing films (especially anything by David Lynch), and have an addiction to the game Animal Crossing (please send help).
