@@ -5,10 +5,10 @@ export const About = () => (
     <h3>About</h3>
     <p>Hello, and thanks for reading!
       <br/>
-    I&apos;m a full stack developer living in Portland, OR.
+    I am a full stack developer who loves seeing projects from inception to completion. My background in professional theatre has prepared me for team collaboration and creative problem solving. I am passionate about reading, love discussing films (especially anything by David Lynch), and have an addiction to the game Animal Crossing (please send help).
+    </p>
+    <p>Likes: Books, Twin Peaks, beaches, kombucha, and placing first in Mario Kart.
       <br/>
-    Likes: Books, Twin Peaks, beaches, kombucha, and coming in first in Mario Kart.
-      <br/>
-    Dislikes: Avengers movies, asparagus, gender roles, and something else.</p>
+    Dislikes: Avengers movies, asparagus, gender roles, and the texture of chalk.</p>
   </section>
 );
