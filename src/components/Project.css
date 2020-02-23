@@ -1,18 +1,33 @@
 .projects {
-  max-width: 600px;
   margin: 0 auto;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
 
   .project {
-    display: flex;
     margin-bottom: 20px;
   
     img {
-      width: 200px;
-      height: 200px;
+      background-color: #dfdfca;
+      width: 40vw;
+      height: 40vw;
+      float: left;
       margin-right: 10px;
-      border: solid 5px black;
+      border: solid 5px grey;
       border-radius: 10px;
       box-shadow: 5px 10px 10px grey;
+    }
+  }
+
+}
+
+@media (min-width: 600px) {
+  .projects{
+    .project{
+      img {
+        width: 200px;
+        height: 200px;
+      }
     }
   }
 }

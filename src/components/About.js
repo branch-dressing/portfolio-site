@@ -4,12 +4,22 @@ import styles from './About.css';
 export const About = () => (
   <section className={styles.about}>
     <h2>About</h2>
-    <p>Hello, and thanks for reading!
-      <br/>
-    I am a full stack developer who loves seeing projects from inception to completion. My background in professional theatre has prepared me for team collaboration and creative problem solving. I am passionate about reading, love discussing films (especially anything by David Lynch), and have an addiction to the game Animal Crossing (please send help).
-    </p>
-    <p>Likes: Books, Twin Peaks, beaches, kombucha, and placing first in Mario Kart.
-      <br/>
-    Dislikes: Avengers movies, asparagus, gender roles, and the texture of chalk.</p>
+    <div>
+      <p>
+        <span className={styles.bold}>Hey,</span>
+        <br/>
+        I am a full stack developer, theatre artist, book nerd, and casual gamer, living in Portland, OR.
+      </p>
+      <p>
+        <span className={styles.bold}>Likes</span> 
+        <br/>
+        Stories, Twin Peaks, the beach, kombucha, and placing first in Mario Kart.
+      </p>
+      <p>
+        <span className={styles.bold}>Dislikes</span> 
+        <br/>
+        The Avengers movies, asparagus, gender roles, and the texture of chalk.
+      </p>
+    </div>
   </section>
 );

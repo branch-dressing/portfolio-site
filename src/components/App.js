@@ -5,6 +5,7 @@ import { Projects } from './Projects';
 import { Connect } from './Connect';
 // import { Reading } from './Reading';
 import styles from './App.css';
+import { Tech } from './Tech';
 
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
       <Header />
       <About />
       <Projects />
+      <Tech />
       {/* 
       <Reading /> */}
       <Connect />

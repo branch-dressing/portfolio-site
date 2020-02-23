@@ -7,10 +7,10 @@ export const Projects = () => (
   <section className={styles.projects}>
     <h2>Projects</h2>
 
-    <div>
+    <div className={styles.project}>
       <h3>Markov Twain</h3>
       <h4>Full Stack App & Twitter Bot</h4>
-      <div className={styles.project}>
+      <div>
         <div>
           <img src={twain} />
         </div>
@@ -18,10 +18,10 @@ export const Projects = () => (
       </div>
     </div>
 
-    <div>
+    <div className={styles.project}>
       <h3>OffBeat</h3>
       <h4>Front End Application</h4>
-      <div className={styles.project}>
+      <div>
         <div>
           <img src={offbeat} />
         </div>
