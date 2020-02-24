@@ -31,7 +31,7 @@ export const books = [
   },
   {
     title: 'The Little Prince',
-    author: 'William Goldman',
+    author: 'Antoine de Saint-Exupéry',
     image: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1367545443l/157993.jpg',
     url: 'https://www.goodreads.com/book/show/71058.The_Little_Prince'
   },

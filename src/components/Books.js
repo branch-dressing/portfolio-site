@@ -8,9 +8,9 @@ export const Books = () => {
   const { favTitle, favAuthor, showInfo, handleHover, handleMouseOut } = useSetBookInfo();
 
   const info = showInfo ? (
-    <span className={styles.favinfo}>{favTitle} by {favAuthor}</span>
+    <span><span className={styles.title}>{favTitle}</span> by {favAuthor}</span>
   ) : (
-    <span></span>
+    <span>Favorites</span>
   );
 
   const bookElemets = books.map(book => (
@@ -19,7 +19,8 @@ export const Books = () => {
 
   return (
     <section className={styles.books}>
-      <h2>Books {info}</h2>
+      <h2>Books</h2>
+      <h3>{info}</h3>
       <ul>
         {bookElemets}
       </ul>
