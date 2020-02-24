@@ -14,9 +14,11 @@ export const Projects = () => (
           <img src={twain} />
         </div>
         <p>Markov Twain creates the best new quotes from the oldest deadest authors utilizing Markov Chains. Featuring quotes from Twain, Austen, Dostoevsky, Carroll, and Poe</p>
-        <h4>Site</h4>
-        <h4>Github</h4>
-        <h4>Twitter</h4>
+        <div className={styles.links}>
+          <a rel="noopener noreferrer" target="_blank"  href="http://markovtwain.herokuapp.com/"><h4>Site</h4></a>
+          <a rel="noopener noreferrer" target="_blank" href="https://github.com/textables/MarkovTwain"><h4>Github</h4></a>
+          <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/markovtwainbot/"><h4>Twitter</h4></a>
+        </div>
       </div>
     </div>
 
@@ -28,8 +30,10 @@ export const Projects = () => (
           <img src={offbeat} />
         </div>
         <p>Offbeat is a metronome and keyboard sampler with plenty of keyboard sounds to choose from, (including Mr. Tom Jones singing clips of &quot;What&apos;s New Pussycat?&quot;).</p>
-        <h4>Site</h4>
-        <h4>Github</h4>
+        <div className={styles.links}>
+          <a href="https://travelfiend.github.io/offbeat/" rel="noopener noreferrer" target="_blank"><h4>Site</h4></a>
+          <a href="https://github.com/TravelFiend/offbeat" rel="noopener noreferrer" target="_blank"><h4>Github</h4></a>
+        </div>
       </div>
     </div>
   </section>

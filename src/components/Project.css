@@ -13,10 +13,17 @@
       width: 40vw;
       height: 40vw;
       float: left;
-      margin-right: 10px;
+      margin: 5px 15px 0px 10px;
       border: solid 2px #219ab6;
       border-radius: 10px;
       box-shadow: 0px 0px 10px 2px grey;
+    }
+    .links {
+      display: flex;
+      justify-content: space-around;
+    }
+    p {
+      margin-top: 10px;
     }
   }
 

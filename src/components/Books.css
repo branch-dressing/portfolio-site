@@ -8,6 +8,11 @@
     align-items: baseline;
     list-style-type: none;
   }
+  .favinfo {
+    font-size: 14px;
+    font-family: 'Roboto Mono';
+    color: grey;
+  }
 }
 
 .current {
