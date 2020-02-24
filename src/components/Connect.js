@@ -1,14 +1,14 @@
 import React from 'react';
-import githubImage from '../assets/github-pixel.png';
-import email from '../assets/pixel-email.png'
 import styles from './Connect.css';
 
 export const Connect = () => (
   <section className={styles.connect}>
-    <h2>Connect</h2>
-    <a href="https://github.com/joelpdurham"><img src={githubImage} /></a>
-    <a href="https://www.linkedin.com/in/joel-patrick-durham/"><img src="https://www.freepnglogos.com/uploads/linkedin-blue-style-logo-png-0.png" /></a>
-    <a href="https://twitter.com/j_p_durham"><img src="https://lh3.googleusercontent.com/proxy/15-0nZDAlhQpCRR4_hZYGlIcvOaypd7-NHIX5rjBausFRoOJNJE6_0-FRoge5ZuLBzwUoPBB8bwfzZnSnwbMvmGtQhMfyrSV2nQumFnKHuiaA70" /></a>
-    <a href="mailto:joeldur@gmail.com"><img src={email} /></a>
+    <h2 className={styles.title}>Connect</h2>
+    <div className={styles.icons}>
+      <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/joel-patrick-durham/"><img src="https://www.pngkey.com/png/full/553-5538587_linkedin-logo-white-circle-transparent-png-linkedin-transparent.png" /></a>
+      <a rel="noopener noreferrer" target="_blank" href="https://github.com/joelpdurham"><img src="https://www.stickpng.com/assets/images/5847f98fcef1014c0b5e48c0.png" /></a>
+      <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/j_p_durham"><img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-twitter-circle-512.png" /></a>
+      <a href="mailto:joeldur@gmail.com"><img src="https://www.stickpng.com/assets/thumbs/58485698e0bb315b0f7675a8.png" /></a>
+    </div>
   </section>
 );
