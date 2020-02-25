@@ -1,0 +1,44 @@
+.books {
+  margin: 0 auto;
+  margin-left: 10px;
+  
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    list-style-type: none;
+  }
+  .favinfo {
+    font-size: 14px;
+    font-family: 'Roboto Mono';
+    color: grey;
+  }
+}
+
+.current {
+  display: flex;
+  img {
+    width: 100px;
+    margin: 10px;
+  }
+  .info {
+    margin: 10px;
+    h5 {
+      margin: 0px
+    }
+    p {
+      margin-left: 0px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .current{
+    progress {
+      display: none;
+    }
+  }
+  .favinfo {
+    display: none;
+  }
+}

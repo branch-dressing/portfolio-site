@@ -1,0 +1,15 @@
+.connect {
+  margin: 0 auto;
+  margin-left: 10px;
+
+  img {
+    width: 40px;
+  }
+
+  .icons {
+    max-width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px 0px, 10px, -10px
+  }
+}

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Mono&display=swap');
+
+body {
+  margin: 0 auto;
+  max-width: 800px;
+  box-shadow: 0px 0px 20px 5px gray;
+}
+
+.app {
+  background-color: whitesmoke;
+  border: solid 5px gray;
+  border-radius: 10px;
+
+  h2 {
+    font-family: 'Press Start 2P';
+    font-size: 24px;
+    color: #e2c200
+  }
+
+  h3, h4, h5 {
+    font-family: 'Roboto Mono';
+  }
+
+  h3 {
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+
+  h4 {
+    font-size: 18px;
+    margin: 0px 0px 5px 0px;
+    font-style: italic;
+  }
+
+  p {
+    font-family: 'Roboto Mono';
+    margin: 5px 10px;
+  }
+}
