@@ -3,12 +3,16 @@
   margin: 0 auto;
   max-width: 350px;
   align-self: center;
+}
 
-  .center {
-    text-align: center;
-  }
+.theatre {
+  color: #c71500;
+}
 
-  .right {
-    text-align: end;
-  }
+.books {
+  color: #219ab6;
+}
+
+.gamer {
+  color:#e2c200
 }
