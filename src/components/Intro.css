@@ -1,0 +1,34 @@
+.intro {
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 350px;
+  align-self: center;
+}
+
+.theatre {
+  color: #c71500;
+}
+
+.books {
+  color: #219ab6;
+}
+
+.gamer {
+  color:#e2c200
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}

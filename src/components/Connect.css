@@ -1,12 +1,19 @@
 .connect {
   margin: 0 auto;
   margin-left: 10px;
+  text-align: center;
+
+  h2 {
+    color: #219ab6 !important;
+    font-size: 28px !important;
+  }
 
   img {
     width: 40px;
   }
 
   .icons {
+    margin: 0 auto;
     max-width: 300px;
     display: flex;
     justify-content: space-evenly;

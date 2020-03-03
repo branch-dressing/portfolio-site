@@ -1,25 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './About.css';
 
-export const About = () => (
-  <section className={styles.about}>
-    <h2>About</h2>
-    <div>
+export const About = () => {
+  const [display, setDisplay] = useState(false);
+
+  const handleClick = () => {
+    setDisplay(!display);
+  };
+
+  const arrow = display ? '-' : (<><span className={styles.dots}>.....................</span>&gt;</>);
+
+  const content = display ? 
+    (<div>
       <p>
-        <span className={styles.bold}>Hey,</span>
-        <br/>
-        I am a full stack developer, theatre artist, book nerd, and casual gamer, living in Portland, OR.
+      I&apos;m a full stack developer who likes seeing projects through from inception to completion. I have 12 years professional experience working in highly collaborative environments, leading diverse teams, and building projects from the ground up.
       </p>
-      <p>
-        <span className={styles.bold}>Likes</span> 
-        <br/>
-        Stories, Twin Peaks, the beach, kombucha, and placing first in Mario Kart.
+      < br/>
+      <p>I have a soft spot in my heart for redux, I enjoy wrestling with regex, and I google CSS solutions, like, a lot.
       </p>
-      <p>
-        <span className={styles.bold}>Dislikes</span> 
-        <br/>
-        The Avengers movies, asparagus, gender roles, and the texture of chalk.
-      </p>
-    </div>
-  </section>
-);
+    </div>) : (<></>);
+
+  
+  return (
+    <section className={styles.about}>
+      <h2 onClick={handleClick}>About <span className={styles.arrow}>{arrow}</span></h2>
+      {content}
+    </section>
+  );
+};
+

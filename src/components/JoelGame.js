@@ -13,7 +13,7 @@ export const JoelGame = () => {
   return (
     <section className={styles.joelGame}>
       <div>
-        <p className={styles.hidden}>Aaaa! The walls are closing in!!!</p>
+        {/* <p className={styles.hidden}>Aaaa! The walls are closing in!!!</p> */}
         <img className={styles.joel} src={pixelJoel} />
       </div>
       {/* <div>

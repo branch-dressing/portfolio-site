@@ -7,16 +7,20 @@ import { Footer } from './Footer';
 import { Books } from './Books';
 import styles from './App.css';
 import { Tech } from './Tech';
+import { Intro } from './Intro';
 
 
 export default function App() {
   return (
     <section className={styles.app}>
       <Header />
-      <About />
-      <Projects />
-      <Tech />
-      <Books />
+      <Intro />
+      <main>
+        <About />
+        <Projects />
+        <Tech />
+      </main>
+      {/* <Books /> */}
       <Connect />
       <Footer />
     </section>
