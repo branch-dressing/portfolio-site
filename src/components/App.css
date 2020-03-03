@@ -17,6 +17,10 @@ body {
     color: #e2c200
   }
 
+  h2:hover {
+    cursor: pointer;
+  }
+
   h3, h4, h5 {
     font-family: 'Roboto Mono';
   }

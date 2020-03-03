@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import twain from '../assets/twain.png';
+//import twain from '../assets/twain.png';
 //import offbeat from '../assets/offbeat.png';
 import styles from './Project.css'; 
 
@@ -9,6 +9,8 @@ export const Projects = () => {
   const handleClick = () => {
     setDisplay(!display);
   };
+
+  const arrow = display ? '-' : (<><span className={styles.dots}>...............</span>&gt;</>);
 
   const content = display ? 
     (<div className={styles.grid}>
@@ -32,8 +34,8 @@ export const Projects = () => {
         <div>
           <p>Commit Kitty allows a team lead to view all of their developer’s most recent commit messages and times, utilizing GitHub’s extensive API. This app was developed by request of Alchemy Code Lab for instructor use.</p>
           <div className={styles.links}>
-            <a rel="noopener noreferrer" target="_blank"  href=""><h4>Site</h4></a>
-            <a rel="noopener noreferrer" target="_blank" href=""><h4>Github</h4></a>
+            <a rel="noopener noreferrer" target="_blank"  href="https://commit-kitty-dev.netlify.com/auth"><h4>Site</h4></a>
+            <a rel="noopener noreferrer" target="_blank" href="https://github.com/Commit-Kitty"><h4>Github</h4></a>
           </div>
         </div>
       </div>
@@ -44,40 +46,28 @@ export const Projects = () => {
         <div>
           <p>Offbeat is a metronome and keyboard sampler. With an adjustable metronome, and plenty of keyboard sounds to choose from, (including Mr. Tom Jones singing clips of &quot;What&apos;s New Pussycat?&quot;). This app allows you record, save songs to your user profile, and play them back.</p>
           <div className={styles.links}>
-            <a rel="noopener noreferrer" target="_blank"  href=""><h4>Site</h4></a>
-            <a rel="noopener noreferrer" target="_blank" href=""><h4>Github</h4></a>
+            <a rel="noopener noreferrer" target="_blank"  href="https://travelfiend.github.io/offbeat/"><h4>Site</h4></a>
+            <a rel="noopener noreferrer" target="_blank" href="https://github.com/TravelFiend/offbeat"><h4>Github</h4></a>
           </div>
         </div>
       </div>
-
-
+      <div className={styles.project}>
+        <h3>Columns and Rogues</h3>
+        <h4>Full Stack App</h4>
+        <div>
+          <p>A rogue-like game where the player is placed on a blank map and must find the exit by exploring one tile at a time. Each new tile uncovers either an enemy, items, or gold. With each level completed, the map gets bigger, and the enemies stronger.</p>
+          <div className={styles.links}>
+            <a rel="noopener noreferrer" target="_blank"  href="https://columns-and-rogues.herokuapp.com/"><h4>Site</h4></a>
+            <a rel="noopener noreferrer" target="_blank" href="https://github.com/columns-and-rogues/columns-and-rogues"><h4>Github</h4></a>
+          </div>
+        </div>
+      </div>
     </div>) : (<></>);
   
   return (
     <section className={styles.projects}>
-      <h2 onClick={handleClick}>Projects</h2>
+      <h2 onClick={handleClick}>Projects <span className={styles.arrow}>{arrow}</span></h2>
       {content}
     </section>
   );
 };
-
-{/* <div className={styles.project}>
-  <h3>OffBeat</h3>
-  <h4>Front End Application</h4>
-        
-  <div>
-          
-    <div>
-      <img src={offbeat} />
-    </div>
-          
-    <p>Offbeat is a metronome and keyboard sampler with plenty of keyboard sounds to choose from, (including Mr. Tom Jones singing clips of &quot;What&apos;s New Pussycat?&quot;).</p>
-          
-    <div className={styles.links}>
-      <a href="https://travelfiend.github.io/offbeat/" rel="noopener noreferrer" target="_blank"><h4>Site</h4></a>
-      <a href="https://github.com/TravelFiend/offbeat" rel="noopener noreferrer" target="_blank"><h4>Github</h4></a>
-    </div>
-          
-  </div>
-        
-</div> */}

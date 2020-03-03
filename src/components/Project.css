@@ -4,10 +4,8 @@
   display: flex;
   flex-direction: column;
 
-  .grid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+  .arrow {
+    color: #a8a8a8;
   }
 
   .project {
@@ -28,6 +26,13 @@
 
 @media (min-width: 600px) {
   .projects{
+
+    .grid {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      margin-bottom: 10px;
+    }
+
     .project{
       img {
         width: 200px;
@@ -35,4 +40,28 @@
       }
     }
   }
+}
+
+@media (max-width: 700px) {
+  .dots {
+    display: none;
+  }
+}
+
+a:link {
+  text-decoration: none;
+  color: #219ab6;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #219ab6;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
 }

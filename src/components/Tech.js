@@ -8,6 +8,8 @@ export const Tech = () => {
     setDisplay(!display);
   };
 
+  const arrow = display ? '-' : (<><span className={styles.dots}>................</span>&gt;</>); 
+
   const content = display ? (
     <div>
       <div className={styles.cats}>
@@ -57,7 +59,7 @@ export const Tech = () => {
 
   return (
     <section className={styles.tech}>
-      <h2 onClick={handleClick}>Tech</h2>
+      <h2 onClick={handleClick}>Tech <span className={styles.arrow}>{arrow}</span></h2>
       {content}
     </section>
   );

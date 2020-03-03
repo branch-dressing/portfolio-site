@@ -4,7 +4,7 @@ import styles from './Intro.css';
 export const Intro = () => (
   <div className={styles.intro}>
     <p>
-    Hey
+    Hey!
       <br/>
     I am a full stack developer, 
     </p>
@@ -12,7 +12,7 @@ export const Intro = () => (
       <br/>
       <a rel="noopener noreferrer" target="_blank" href="https://www.goodreads.com/user/show/60828906-joel"><span className={styles.books}>book nerd</span></a>,
       <br/>
-      and <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/eggcornco/?eid=ARBnTAa7pv4AEfnnTvDqhW3pGHB-hxB8nH0UeQhBkTnkc3O19IESn6wKfxvTDc2ovXIIQUp52cNgKgTt"><span className={styles.gamer}>casual gamer</span></a>,
+      and <span className={styles.gamer}>casual gamer</span>,
     </p>
     <p className={styles.right}>
     living in Portland, OR.
