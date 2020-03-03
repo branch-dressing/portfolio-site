@@ -6,6 +6,7 @@
   h2 {
     color: #219ab6 !important;
     font-size: 28px !important;
+    cursor: default !important;
   }
 
   img {
