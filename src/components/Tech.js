@@ -5,7 +5,7 @@ import { useDotAnimation } from '../hooks/useDotAnimation';
 export const Tech = () => {
   const { display, animate, dots, handleClick } = useDotAnimation(16);
 
-  const arrow = display && animate ? '<' : (<span className={styles.dots}>{dots}</span>); 
+  const arrow = display && animate ? '<' : (<><span className={styles.dots}>{dots}</span><span className={styles.mobileArrow}>&gt;</span></>); 
 
   const content = display ? (
     <div>

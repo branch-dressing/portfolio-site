@@ -42,9 +42,16 @@
   }
 }
 
+.mobileArrow {
+  display: none;
+}
+
 @media (max-width: 700px) {
   .dots {
     display: none;
+  }
+  .mobileArrow{
+    display: contents;
   }
 }
 

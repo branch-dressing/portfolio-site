@@ -9,10 +9,8 @@ export const useDotAnimation = (numOfDots) => {
     return dots;
   };
 
-  const trail = setTrail();
-
   const [display, setDisplay] = useState(false);
-  const [dots, setDots] = useState(trail + '>');
+  const [dots, setDots] = useState(setTrail() + '>');
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
@@ -28,7 +26,7 @@ export const useDotAnimation = (numOfDots) => {
       if(dots.length <= numOfDots) {
         setTimeout(() => {
           setDots('.' + dots);
-        }, 5);
+        }, 7);
       } else {
         setDisplay(false);
       }
