@@ -4,6 +4,11 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
+
+  .pronoun {
+    font-family: 'Press Start 2P';
+    color: #b9b9b9;
+  }
   
   div {
     color: #219ab6;
