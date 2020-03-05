@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
 import styles from './About.css';
+import { useDotAnimation } from '../hooks/useDotAnimation';
 
 export const About = () => {
-  const [display, setDisplay] = useState(false);
+  const { display, animate, dots, handleClick } = useDotAnimation(21);
 
-  const handleClick = () => {
-    setDisplay(!display);
-  };
-
-  const arrow = display ? '-' : (<><span className={styles.dots}>.....................</span>&gt;</>);
+  const arrow = display && animate ? '<' : (<span className={styles.dots}>{dots}</span>); 
 
   const content = display ? 
     (<div>

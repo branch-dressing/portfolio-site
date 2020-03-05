@@ -1,39 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import styles from './Tech.css';
+import { useDotAnimation } from '../hooks/useDotAnimation';
 
 export const Tech = () => {
-  const [display, setDisplay] = useState(false);
-  const [dots, setDots] = useState('................>');
-  const [animate, setAnimate] = useState(false);
-
-  useEffect(() => {
-    if(animate) {
-      if(dots.length > 1) {
-        setTimeout(() => {
-          setDots(dots.slice(0, dots.length - 2) + '<');
-        }, 10);
-      } else {
-        setDisplay(true);
-      }
-    } else {
-      if(dots.length < 16) {
-        setTimeout(() => {
-          setDots('.' + dots);
-        }, 5);
-      } else {
-        setDisplay(false);
-      }
-    }
-  }, [dots, animate]);
-  
-  const handleClick = () => {
-    if(!display) {
-      setAnimate(true);
-    } else {
-      setDots('>');
-      setAnimate(false);
-    }
-  };
+  const { display, animate, dots, handleClick } = useDotAnimation(16);
 
   const arrow = display && animate ? '<' : (<span className={styles.dots}>{dots}</span>); 
 
