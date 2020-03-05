@@ -1,18 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './Tech.css';
+import { useDotAnimation } from '../hooks/useDotAnimation';
 
 export const Tech = () => {
-  const [display, setDisplay] = useState(false);
+  const { display, animate, dots, handleClick } = useDotAnimation(16);
 
-  const handleClick = () => {
-    setDisplay(!display);
-  };
-
-  const arrow = display ? '-' : (<><span className={styles.dots}>................</span>&gt;</>); 
+  const arrow = display && animate ? '<' : (<><span className={styles.dots}>{dots}</span><span className={styles.mobileArrow}>&gt;</span></>); 
 
   const content = display ? (
     <div>
       <div className={styles.cats}>
+        <h4>Languages</h4>
         <div className={styles.items}>
           <p>HTML 5</p>
           <p>CSS 3</p>
@@ -20,18 +18,21 @@ export const Tech = () => {
         </div>
       </div>
       <div className={styles.cats}>
+        <h4>Front End</h4>
         <div className={styles.items}>
           <p>React</p>
           <p>Redux</p>
         </div>
       </div>
       <div className={styles.cats}>
+        <h4>Back End</h4>
         <div className={styles.items}>
           <p>Node.js</p>
           <p>Express</p>
         </div>
       </div>
       <div className={styles.cats}>
+        <h4>Databases</h4>
         <div className={styles.items}>
           <p>MongoDB</p>
           <p>Mongoose</p>
@@ -39,6 +40,7 @@ export const Tech = () => {
         </div>
       </div>
       <div className={styles.cats}>
+        <h4>Testing</h4>
         <div className={styles.items}>
           <p>Jest</p>
           <p>Qunit</p>
@@ -46,10 +48,12 @@ export const Tech = () => {
         </div>
       </div>
       <div className={styles.cats}>
+        <h4>Tools</h4>
         <div className={styles.items}>
           <p>Github</p>
           <p>VScode</p>
           <p>Heroku</p>
+          <p>Netlify</p>
           <p>Slack</p>
           <p>Trello</p>
         </div>

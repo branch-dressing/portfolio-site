@@ -3,6 +3,9 @@
   margin-left: 10px;
   display: flex;
   flex-direction: column;
+  h4 {
+    margin: 10px 0px 0px 0px;
+  }
 }
 
 .arrow {
@@ -14,8 +17,28 @@
   flex-wrap: wrap;
 }
 
+.mobileArrow {
+  display: none;
+}
+
+@media (min-width: 730px) {
+  .items {
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%
+  }
+}
+
 @media (max-width: 700px) {
   .dots {
     display: none;
+  }
+  .mobileArrow{
+    display: contents;
+  }
+
+  .items {
+    display: grid;
+    grid-template-columns: 30% 30% 36%;
+
   }
 }

@@ -1,16 +1,11 @@
-import React, { useState } from 'react';
-//import twain from '../assets/twain.png';
-//import offbeat from '../assets/offbeat.png';
+import React from 'react';
 import styles from './Project.css'; 
+import { useDotAnimation } from '../hooks/useDotAnimation';
 
 export const Projects = () => { 
-  const [display, setDisplay] = useState(false);
+  const { display, animate, dots, handleClick } = useDotAnimation(15);
 
-  const handleClick = () => {
-    setDisplay(!display);
-  };
-
-  const arrow = display ? '-' : (<><span className={styles.dots}>...............</span>&gt;</>);
+  const arrow = display && animate ? '<' : (<><span className={styles.dots}>{dots}</span><span className={styles.mobileArrow}>&gt;</span></>); 
 
   const content = display ? 
     (<div className={styles.grid}>
