@@ -8,13 +8,29 @@
 .theatre {
   color: #c71500;
 }
+.theatre:hover {
+  text-decoration: underline;
+  text-decoration-color: #c71500;
+}
 
 .books {
   color: #219ab6;
 }
 
 .gamer {
-  color:#e2c200
+  color:#e2c200;
+  cursor: pointer;
+}
+
+.gamer:hover {
+  text-decoration: underline;
+}
+
+.playing {
+  margin: -10px 0px 0px 25px !important;
+  padding: 5px;
+  font-size: 12px;
+  color: #464646;
 }
 
 a:link {

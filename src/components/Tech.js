@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Tech.css';
 import { useDotAnimation } from '../hooks/useDotAnimation';
 
