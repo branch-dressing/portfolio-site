@@ -14,7 +14,9 @@ export const Projects = () => {
         <h3>Markov Twain</h3>
         <h4>Full Stack App & Twitter Bot</h4>
         <div>
-          <p>Markov Twain creates the best new quotes from the oldest deadest authors utilizing Markov Chains. Featuring quotes from Twain, Austen, Dostoevsky, Carroll, and Poe</p>
+          <p>Markov Twain creates the best new quotes from the oldest deadest authors utilizing Markov Chains. Featuring quotes from Twain, Austen, Dostoevsky, Carroll, and Poe.
+          </p>
+          <br/>
           <div className={styles.links}>
             <a rel="noopener noreferrer" target="_blank"  href="http://markovtwain.herokuapp.com/"><h4>Site</h4></a>
             <a rel="noopener noreferrer" target="_blank" href="https://github.com/textables/MarkovTwain"><h4>Github</h4></a>

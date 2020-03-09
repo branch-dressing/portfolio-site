@@ -6,6 +6,9 @@
   h4 {
     margin: 10px 0px 0px 0px;
   }
+  p {
+    text-align: center;
+  }
 }
 
 .arrow {
