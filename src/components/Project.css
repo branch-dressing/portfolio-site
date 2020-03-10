@@ -35,8 +35,9 @@
 
     .project{
       img {
-        width: 200px;
-        height: 200px;
+        max-width: -webkit-fill-available;
+        border: solid 1px;
+        margin-right: 5px;
       }
     }
   }

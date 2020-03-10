@@ -12,9 +12,10 @@ export const Tech = () => {
       <div className={styles.cats}>
         <h4>Languages</h4>
         <div className={styles.items}>
+          <p>JavaScript</p>
+          <p>Ruby</p>
           <p>HTML 5</p>
           <p>CSS 3</p>
-          <p>Javascript</p>
         </div>
       </div>
       <div className={styles.cats}>
