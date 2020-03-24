@@ -30,7 +30,7 @@ export const useDotAnimation = (numOfDots) => {
       if(dots.length > 1) {
         setTimeout(() => {
           setDots(dots.slice(0, dots.length - 2) + '<');
-        }, 7);
+        }, 10);
       } else {
         setDisplay(true);
       }
@@ -38,7 +38,7 @@ export const useDotAnimation = (numOfDots) => {
       if(dots.length <= numOfDots) {
         setTimeout(() => {
           setDots('.' + dots);
-        }, 5);
+        }, 7);
       } else {
         setDisplay(false);
       }

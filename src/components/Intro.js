@@ -7,9 +7,9 @@ export const Intro = () => {
   const games = display ? (
     <p className={styles.playing}>
       Currently playing:
-      <br/>- Breath of the Wild,
-      <br/>- Pokemon Sword,
-      <br/>- and soon Animal Crossing: New Horizons!
+      <br/>- Animal Crossing: New Horizons
+      <br/>- Breath of the Wild
+      <br/>- Pokemon Sword
     </p>) : (<></>);
   
   return (
