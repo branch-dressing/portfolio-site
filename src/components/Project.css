@@ -12,6 +12,16 @@
     margin-left: 5px;
     margin-bottom: 0px;
 
+    .tech {
+      font-size: 14px;
+      font-weight: bold;
+      color: #464646;
+    }
+
+    .bottomDots {
+      margin-top: -10px;
+    }
+
     .links {
       display: flex;
       justify-content: space-around;

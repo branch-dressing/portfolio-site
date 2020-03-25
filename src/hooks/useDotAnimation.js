@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { toGetResetStatus } from '../selectors/selectors';
+import { resetDone } from '../actions/componentActions';
 
 export const useDotAnimation = (numOfDots) => {
+  const dispatch = useDispatch();
   const setTrail = () => {
     let dots = ''; 
     for(let i = 0; i < numOfDots; i++) {
@@ -8,17 +12,25 @@ export const useDotAnimation = (numOfDots) => {
     }
     return dots;
   };
-
+  const reset = useSelector(toGetResetStatus);
   const [display, setDisplay] = useState(false);
   const [dots, setDots] = useState(setTrail() + '>');
   const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    if(reset && display) {
+      setDots('>');
+      setAnimate(false);
+    }
+    dispatch(resetDone());
+  }, [reset]);
 
   useEffect(() => {
     if(animate) {
       if(dots.length > 1) {
         setTimeout(() => {
           setDots(dots.slice(0, dots.length - 2) + '<');
-        }, 7);
+        }, 10);
       } else {
         setDisplay(true);
       }
@@ -26,7 +38,7 @@ export const useDotAnimation = (numOfDots) => {
       if(dots.length <= numOfDots) {
         setTimeout(() => {
           setDots('.' + dots);
-        }, 5);
+        }, 7);
       } else {
         setDisplay(false);
       }
