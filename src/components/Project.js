@@ -15,7 +15,7 @@ export const Project = ({ title, type, tech, description, links }) => {
       <h3>{title}</h3>
       <h4>{type}</h4>
       <p className={styles.tech}>{tech}</p>
-      <p>..................................</p>
+      <p className={styles.bottomDots}>..................................</p>
       <div>
         <p>{description}</p>
         <div className={styles.links}>

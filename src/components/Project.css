@@ -18,6 +18,10 @@
       color: #464646;
     }
 
+    .bottomDots {
+      margin-top: -10px;
+    }
+
     .links {
       display: flex;
       justify-content: space-around;
