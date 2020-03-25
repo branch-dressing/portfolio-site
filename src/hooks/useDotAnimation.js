@@ -21,6 +21,8 @@ export const useDotAnimation = (numOfDots) => {
     if(reset && display) {
       setDots('>');
       setAnimate(false);
+    } else if(!display && reset) {
+      setAnimate(true);
     }
     dispatch(resetDone());
   }, [reset]);

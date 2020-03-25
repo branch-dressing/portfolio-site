@@ -1,15 +1,11 @@
 import React from 'react';
 import { JoelGame } from './JoelGame';
 import styles from './Header.css';
-import { useSelector, useDispatch } from 'react-redux';
-import { toGetResetStatus } from '../selectors/selectors';
+import { useDispatch } from 'react-redux';
 import { resetStart } from '../actions/componentActions';
 
 export const Header = () => {
-  const reset = useSelector(toGetResetStatus);
   const dispatch = useDispatch();
-  console.log(reset);
-
 
   return (
     <header className={styles.header} onClick={() => dispatch(resetStart())}>

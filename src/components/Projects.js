@@ -4,7 +4,7 @@ import { useDotAnimation } from '../hooks/useDotAnimation';
 import { Project } from './Project';
 
 export const Projects = () => { 
-  const { display, animate, dots, handleClick } = useDotAnimation(15);
+  const { display, animate, dots, handleClick } = useDotAnimation(12);
 
   const arrow = display && animate ? '<' : (<><span className={styles.dots}>{dots}</span><span className={styles.mobileArrow}>&gt;</span></>); 
 
