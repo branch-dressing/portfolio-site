@@ -17,8 +17,8 @@ export default function App() {
       <Intro />
       <main>
         <About />
-        <Projects />
         <Tech />
+        <Projects />
       </main>
       {/* <Books /> */}
       <Connect />

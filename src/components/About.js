@@ -14,10 +14,10 @@ export const About = () => {
       </p>
       <br/>
       <p>
-        When I&apos;m not in front of the computer, I&apos;m most likely at Powell&apos;s books, the beach, or a coffee shop. No matter where I am it&apos;s almost guaranteed I&apos;ll be reading a book.
+        When I&apos;m not in front of the computer, I&apos;m most likely <del style={{ fontSize: 'small' }}>at Powell&apos;s books, the beach, or a coffee shop</del> <em style={{ textDecoration: 'underline' }}>STAYING HOME!</em> No matter where I am it&apos;s almost guaranteed I&apos;ll be reading a book.
       </p>
       < br/>
-      <p>I have a soft spot in my heart for redux, I enjoy wrestling with regex, and I google CSS solutions, like, a lot.
+      <p>I have a soft spot in my heart for redux, I enjoy the freedom I feel using MongoDB, and I google CSS solutions, like, a lot.
       </p>
     </div>) : (<></>);
 
