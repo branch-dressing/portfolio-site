@@ -13,7 +13,6 @@ export const Tech = () => {
         <h4>Languages</h4>
         <div className={styles.items}>
           <p>JavaScript</p>
-          <p>Ruby</p>
           <p>HTML 5</p>
           <p>CSS 3</p>
         </div>
