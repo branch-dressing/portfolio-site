@@ -7,9 +7,9 @@ export const Intro = () => {
   const games = display ? (
     <p className={styles.playing}>
       Currently playing:
-      <br/>- Animal Crossing: New Horizons
-      <br/>- Breath of the Wild
-      <br/>- Pokemon Sword
+      <br/>- Animal Crossing
+      <br/>- Mario Kart
+      <br/>- Yooka LayLee
     </p>) : (<></>);
   
   return (
@@ -19,7 +19,7 @@ export const Intro = () => {
         <br/>
     I am a full stack developer, 
       </p>
-      <p className={styles.center}><a href="https://www.wweek.com/arts/theater/2017/10/24/nesting-vacancy-is-part-haunted-house-part-twilight-zone-episode-and-shows-us-that-plays-can-be-really-really-scary/" rel="noopener noreferrer" target="_blank"><span className={styles.theatre}>theatre artist</span></a>,
+      <p className={styles.center}><a href="https://www.orartswatch.org/theater-to-feed-your-tv-jones/" rel="noopener noreferrer" target="_blank"><span className={styles.theatre}>theatre artist</span></a>,
         <br/>
         <a rel="noopener noreferrer" target="_blank" href="https://www.goodreads.com/user/show/60828906-joel"><span className={styles.books}>book nerd</span></a>,
         <br/>
