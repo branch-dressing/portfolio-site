@@ -10,7 +10,7 @@ export const About = () => {
   const content = display ? 
     (<div>
       <p>
-      I&apos;m a full stack developer who likes seeing projects through from inception to completion. I have 12 years professional experience working in highly collaborative environments, leading diverse teams, and building projects from the ground up.
+      I&apos;m a Software Engineer, currently working for Kickstand in Portland, Oregon. I have 12 years professional experience working in highly collaborative environments, leading diverse teams, and building projects from the ground up.
       </p>
       <br/>
       <p>
