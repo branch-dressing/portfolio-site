@@ -4,20 +4,20 @@ import styles from './Intro.css';
 export const Intro = () => {
   const [display, setDisplay] = useState(false);
 
-  const games = display ? (
+  const games = display && (
     <p className={styles.playing}>
       Currently playing:
-      <br/>- Animal Crossing
+      <br/>- Celeste
+      <br/>- Detention
       <br/>- Mario Kart
-      <br/>- Yooka LayLee
-    </p>) : (<></>);
+    </p>);
   
   return (
     <div className={styles.intro}>
       <p>
     Hey!
         <br/>
-    I am a full stack developer, 
+    I am a Software Engineer, 
       </p>
       <p className={styles.center}><a href="https://www.orartswatch.org/theater-to-feed-your-tv-jones/" rel="noopener noreferrer" target="_blank"><span className={styles.theatre}>theatre artist</span></a>,
         <br/>
